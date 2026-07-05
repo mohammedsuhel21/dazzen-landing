@@ -26,7 +26,7 @@
   // row. See README.md for the exact script and deployment steps.
   // ---------------------------------------------------------------------
   const CONFIG = {
-    launchDate: '2026-10-15T00:00:00+05:30',
+    launchDate: '2026-12-02T00:00:00+05:30',
     showCountdown: true,
     waitlistEndpoint: 'https://script.google.com/macros/s/AKfycbwmhSOzgFsx3J_2y3sL_RaaCME6qpLrR2WGTgBeEWTvbSTAp-UmiPgdtBd3hFV_GvHjOg/exec',
   };
