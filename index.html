@@ -1,518 +1,303 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.js"></script>
-</head>
-<body>
-<x-dc>
-<helmet data-dc-atomics="">
+
 <title>Dazzen — Science-Backed Skincare | Launching Soon</title>
 <meta name="description" content="Dazzen is science-backed skincare, launching soon. Join the waitlist for early access, founder pricing, and first access to new product drops.">
+<link rel="canonical" href="https://dazzen.in">
+
 <meta property="og:title" content="Dazzen — Launching Soon">
 <meta property="og:description" content="Science-backed skincare, launching soon. Join the waitlist for early access and founder pricing.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dazzen.in">
-<meta property="og:image" content="assets/dazen-logo.png">
+<meta property="og:image" content="https://dazzen.in/assets/images/dazzen-logo.png">
+<meta property="og:site_name" content="Dazzen">
+
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Dazzen — Launching Soon">
 <meta name="twitter:description" content="Science-backed skincare, launching soon. Join the waitlist for early access and founder pricing.">
-<meta name="twitter:image" content="assets/dazen-logo.png">
+<meta name="twitter:image" content="https://dazzen.in/assets/images/dazzen-logo.png">
+
 <meta name="theme-color" content="#F6E9D4">
-<link rel="icon" type="image/png" href="assets/dazen-logo.png">
+<link rel="icon" type="image/png" href="assets/images/dazzen-logo.png">
+<link rel="apple-touch-icon" href="assets/images/dazzen-logo.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
-<style>
-  * { box-sizing: border-box; }
-  body { margin: 0; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
-  ::selection { background: #152316; color: #FBF2E4; }
-  input::placeholder { color: rgba(21,35,22,0.36); }
-  @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
-  @keyframes floatA { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(24px,-30px) scale(1.06); } }
-  @keyframes floatB { 0%,100% { transform: translate(0,0) scale(1); } 50% { transform: translate(-30px,26px) scale(1.08); } }
-  @keyframes spin { to { transform: rotate(360deg); } }
-  @keyframes rippleAnim { from { transform: scale(0); opacity: 0.45; } to { transform: scale(2.6); opacity: 0; } }
-  @keyframes checkPop { 0% { transform: scale(0.4) rotate(-10deg); opacity: 0; } 60% { transform: scale(1.08) rotate(2deg); opacity: 1; } 100% { transform: scale(1) rotate(0); opacity: 1; } }
-  @keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
-</style>
-</helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
-<div ref="{{ setRootRef }}" style="--ink:#152316; --ink-soft:rgba(21,35,22,0.6); --ink-faint:rgba(21,35,22,0.4); --paper:#FBF2E4; --sand:#F1E1C6; --sand-line:rgba(151,109,42,0.2); --gold:{{ accentColor }}; --gold-soft:color-mix(in oklab, {{ accentColor }} 16%, transparent); --glass:rgba(255,255,255,0.6); font-family:'Manrope',sans-serif; background:linear-gradient(180deg, #FEFAF2 0%, #F7E9D2 46%, #F1DFC0 100%); color:var(--ink); overflow-x:hidden; position:relative;">
+<link rel="stylesheet" href="styles.css">
 
-  <!-- NAV -->
-  <div style="position:fixed; top:0; left:0; right:0; z-index:50; display:flex; align-items:center; justify-content:space-between; padding:clamp(16px,2.4vw,26px) clamp(20px,5vw,56px); background:color-mix(in oklab, var(--paper) 66%, transparent); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); border-bottom:1px solid var(--sand-line);">
-    <img src="assets/dazen-logo.png" alt="Dazzen" style="height:clamp(20px,2.6vw,26px); width:auto; display:block;">
-    <a href="#waitlist" style="font-family:'Space Grotesk',sans-serif; font-size:12.5px; font-weight:600; letter-spacing:0.06em; text-transform:uppercase; color:var(--ink); text-decoration:none; padding:10px 20px; background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 55%, white), var(--gold)); border-radius:100px; box-shadow:0 8px 18px -8px color-mix(in oklab, var(--gold) 60%, transparent); transition:transform 0.25s ease, box-shadow 0.25s ease;" style-hover="transform:translateY(-2px); box-shadow:0 12px 22px -8px color-mix(in oklab, var(--gold) 70%, transparent);">Join waitlist</a>
-  </div>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Dazzen",
+  "url": "https://dazzen.in",
+  "logo": "https://dazzen.in/assets/images/dazzen-logo.png",
+  "sameAs": [
+    "https://instagram.com/dazzen.in",
+    "https://facebook.com/dazzen.in"
+  ]
+}
+</script>
+</head>
+<body>
 
+<!-- NAV -->
+<header class="nav">
+  <img src="assets/images/dazzen-logo.png" alt="Dazzen" class="nav__logo" width="130" height="26">
+  <a href="#waitlist" class="btn-pill">Join waitlist</a>
+</header>
+
+<main>
   <!-- HERO -->
-  <section style="position:relative; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:clamp(140px,18vw,200px) clamp(20px,6vw,56px) clamp(80px,10vw,120px); overflow:hidden;">
-    <div ref="{{ setOrbA }}" style="position:absolute; top:2%; left:-12%; width:clamp(340px,42vw,600px); height:clamp(300px,36vw,520px); border-radius:44% 56% 62% 38% / 52% 44% 56% 48%; background:radial-gradient(120% 130% at 30% 25%, rgba(255,255,255,0.95), color-mix(in oklab, var(--gold) 34%, transparent) 44%, transparent 74%); filter:blur(4px); animation:floatA 16s ease-in-out infinite; pointer-events:none; box-shadow:inset 0 0 70px rgba(255,255,255,0.6);"></div>
-    <div ref="{{ setOrbB }}" style="position:absolute; bottom:-6%; right:-12%; width:clamp(360px,44vw,640px); height:clamp(320px,38vw,560px); border-radius:58% 42% 40% 60% / 46% 54% 46% 54%; background:radial-gradient(110% 120% at 70% 70%, rgba(255,255,255,0.7), color-mix(in oklab, var(--gold) 22%, transparent) 40%, transparent 76%); filter:blur(4px); animation:floatB 18s ease-in-out infinite; pointer-events:none;"></div>
+  <section class="hero">
+    <div class="blob blob--a" data-parallax="0.08" aria-hidden="true"></div>
+    <div class="blob blob--b" data-parallax="-0.06" aria-hidden="true"></div>
 
-    <svg viewBox="0 0 140 140" style="position:absolute; top:14%; right:6%; width:clamp(90px,11vw,150px); height:auto; opacity:0.55; pointer-events:none; color:var(--gold);" fill="none">
-      <circle cx="98" cy="30" r="17" stroke="currentColor" stroke-width="1.4" opacity="0.65"></circle>
-      <circle cx="60" cy="58" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.55"></circle>
-      <circle cx="112" cy="76" r="6" fill="currentColor" opacity="0.4"></circle>
-      <circle cx="40" cy="20" r="4" fill="currentColor" opacity="0.35"></circle>
-      <line x1="98" y1="30" x2="60" y2="58" stroke="currentColor" stroke-width="1.2" opacity="0.45"></line>
-      <line x1="98" y1="30" x2="112" y2="76" stroke="currentColor" stroke-width="1.2" opacity="0.45"></line>
-      <line x1="60" y1="58" x2="40" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.35"></line>
+    <svg class="molecule molecule--hero" viewBox="0 0 140 140" fill="none" aria-hidden="true">
+      <circle cx="98" cy="30" r="17" stroke="currentColor" stroke-width="1.4" opacity="0.65"/>
+      <circle cx="60" cy="58" r="9" stroke="currentColor" stroke-width="1.4" opacity="0.55"/>
+      <circle cx="112" cy="76" r="6" fill="currentColor" opacity="0.4"/>
+      <circle cx="40" cy="20" r="4" fill="currentColor" opacity="0.35"/>
+      <line x1="98" y1="30" x2="60" y2="58" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+      <line x1="98" y1="30" x2="112" y2="76" stroke="currentColor" stroke-width="1.2" opacity="0.45"/>
+      <line x1="60" y1="58" x2="40" y2="20" stroke="currentColor" stroke-width="1.2" opacity="0.35"/>
     </svg>
 
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; display:inline-flex; align-items:center; gap:8px; padding:9px 18px; border-radius:100px; background:var(--glass); backdrop-filter:blur(8px); border:1px solid rgba(255,255,255,0.7); box-shadow:0 6px 16px -10px rgba(151,109,42,0.4); margin-bottom:28px;">
-      <span style="width:6px; height:6px; border-radius:50%; background:var(--gold); display:inline-block;"></span>
-      <span style="font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.14em; color:var(--ink-soft); text-transform:uppercase;">Science-Backed Skincare</span>
+    <div class="reveal badge">
+      <span class="badge__dot"></span>
+      <span class="badge__label">Science-Backed Skincare</span>
     </div>
 
-    <h1 data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease 0.08s, transform 0.9s ease 0.08s; font-size:clamp(38px,6.4vw,84px); line-height:1.04; letter-spacing:-0.03em; font-weight:700; margin:0 0 22px; max-width:16ch;">Great skin takes<br><span style="background:linear-gradient(100deg, var(--ink) 20%, var(--gold) 55%, var(--ink) 85%); -webkit-background-clip:text; background-clip:text; color:transparent;">science.</span> We're almost ready.</h1>
+    <h1 class="reveal reveal--d1 hero__title">Great skin takes<br><span class="gradient-text">science.</span> We're almost ready.</h1>
 
-    <p data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease 0.16s, transform 0.9s ease 0.16s; font-size:clamp(15.5px,1.5vw,18.5px); line-height:1.65; color:var(--ink-soft); max-width:620px; margin:0 0 40px; font-weight:400;">Dazzen is building science-backed skincare focused on delivering visible results through clinically inspired formulations. We're preparing for launch and inviting early members to join before everyone else.</p>
+    <p class="reveal reveal--d2 hero__sub">Dazzen is building science-backed skincare focused on delivering visible results through clinically inspired formulations. We're preparing for launch and inviting early members to join before everyone else.</p>
 
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease 0.24s, transform 0.9s ease 0.24s; display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:center;">
-      <a href="#waitlist" onClick="{{ ripple }}" style="position:relative; overflow:hidden; font-family:'Space Grotesk',sans-serif; font-size:14.5px; font-weight:600; letter-spacing:0.01em; color:var(--ink); background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 40%, white), var(--gold)); padding:16px 34px; border-radius:100px; text-decoration:none; box-shadow:0 16px 32px -14px color-mix(in oklab, var(--gold) 70%, transparent); transition:transform 0.3s ease, box-shadow 0.3s ease;" style-hover="transform:translateY(-2px); box-shadow:0 20px 38px -14px color-mix(in oklab, var(--gold) 80%, transparent);">Join the Waitlist</a>
-      <a href="#philosophy" style="font-family:'Space Grotesk',sans-serif; font-size:14px; font-weight:600; color:var(--ink-soft); text-decoration:none; padding:16px 8px; border-bottom:1px solid var(--sand-line); transition:color 0.25s ease, border-color 0.25s ease;" style-hover="color:var(--ink); border-color:var(--ink);">Our approach ↓</a>
+    <div class="reveal reveal--d3 hero__actions">
+      <a href="#waitlist" class="btn btn--primary">Join the Waitlist</a>
+      <a href="#philosophy" class="link-underline">Our approach ↓</a>
     </div>
   </section>
 
   <!-- WAITLIST -->
-  <section id="waitlist" style="padding:clamp(60px,8vw,100px) clamp(20px,6vw,56px) clamp(100px,12vw,150px); display:flex; justify-content:center;">
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; width:100%; max-width:520px; background:linear-gradient(160deg, rgba(255,255,255,0.85), rgba(255,255,255,0.45)); backdrop-filter:blur(18px); -webkit-backdrop-filter:blur(18px); border:1px solid rgba(255,255,255,0.8); border-radius:28px; padding:clamp(32px,5vw,52px); box-shadow:0 40px 90px -40px rgba(151,109,42,0.4), inset 0 1px 0 rgba(255,255,255,0.9); position:relative; overflow:hidden;" style-before="content:''; position:absolute; top:-60%; left:-30%; width:70%; height:220%; background:linear-gradient(120deg, rgba(255,255,255,0.55), transparent 60%); transform:rotate(18deg); pointer-events:none;">
+  <section id="waitlist" class="waitlist">
+    <div class="reveal waitlist__card">
 
-      <sc-if value="{{ isSuccessA }}" hint-placeholder-val="{{ false }}">
-        <div style="text-align:center; padding:clamp(20px,3vw,32px) 0; position:relative;">
-          <div style="width:64px; height:64px; border-radius:50%; margin:0 auto 22px; background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 50%, white), var(--gold)); display:flex; align-items:center; justify-content:center; animation:checkPop 0.6s cubic-bezier(0.34,1.56,0.64,1) both; box-shadow:0 14px 30px -12px color-mix(in oklab, var(--gold) 70%, transparent);">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L10 17.5L19 7" stroke="#152316" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          </div>
-          <h3 style="font-size:clamp(21px,2.4vw,26px); font-weight:700; letter-spacing:-0.01em; margin:0 0 10px;">You're officially on the list.</h3>
-          <p style="font-size:15px; color:var(--ink-soft); line-height:1.6; margin:0;">We'll notify you before anyone else.</p>
+      <div class="waitlist__success" data-form-success="a" hidden>
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L10 17.5L19 7" stroke="#152316" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-      </sc-if>
+        <h3>You're officially on the list.</h3>
+        <p>We'll notify you before anyone else.</p>
+      </div>
 
-      <sc-if value="{{ isNotSuccessA }}" hint-placeholder-val="{{ true }}">
-        <div style="position:relative;">
-          <h2 style="font-size:clamp(23px,2.6vw,29px); font-weight:700; letter-spacing:-0.01em; margin:0 0 8px;">Join the waitlist</h2>
-          <p style="font-size:14.5px; color:var(--ink-soft); margin:0 0 28px;">Be the first to know when Dazzen launches.</p>
+      <div data-form-idle="a">
+        <h2 class="waitlist__heading">Join the waitlist</h2>
+        <p class="waitlist__lede">Be the first to know when Dazzen launches.</p>
 
-          <form onSubmit="{{ handleSubmitA }}" style="display:flex; flex-direction:column; gap:14px;">
-            <input ref="{{ setNameRefA }}" type="text" autocomplete="given-name" name="firstName" placeholder="Name" value="{{ firstNameA }}" onChange="{{ setFirstNameA }}" style="width:100%; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:14px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
-            <input ref="{{ setEmailRefA }}" type="email" autocomplete="email" name="email" placeholder="Email address" value="{{ emailA }}" onChange="{{ setEmailA }}" style="width:100%; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:14px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
-            <input ref="{{ setPhoneRefA }}" type="tel" autocomplete="tel" name="phone" placeholder="Contact number" value="{{ phoneA }}" onChange="{{ setPhoneA }}" style="width:100%; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:14px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
+        <form data-waitlist-form="a" novalidate>
+          <input type="text" autocomplete="given-name" name="firstName" placeholder="Name" class="field" data-field="name" aria-label="First name" required>
+          <input type="email" autocomplete="email" name="email" placeholder="Email address" class="field" data-field="email" aria-label="Email address" required>
+          <input type="tel" autocomplete="tel" name="phone" placeholder="Contact number" class="field" data-field="phone" aria-label="Contact number" required>
 
-            <sc-if value="{{ errorA }}" hint-placeholder-val="{{ false }}">
-              <div style="font-size:13px; color:#A23B2E; padding:2px 2px 0;">{{ errorA }}</div>
-            </sc-if>
+          <div class="form-error" data-form-error="a" hidden></div>
 
-            <button type="submit" onClick="{{ ripple }}" disabled="{{ isLoadingA }}" style="position:relative; overflow:hidden; margin-top:6px; width:100%; font-family:'Space Grotesk',sans-serif; font-size:15px; font-weight:600; color:var(--ink); background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 40%, white), var(--gold)); padding:17px 24px; border:none; border-radius:14px; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:10px; box-shadow:0 18px 34px -16px color-mix(in oklab, var(--gold) 75%, transparent); transition:transform 0.25s ease, opacity 0.25s ease;" style-hover="transform:translateY(-2px);">
-              <sc-if value="{{ isLoadingA }}" hint-placeholder-val="{{ false }}">
-                <span style="width:16px; height:16px; border-radius:50%; border:2px solid rgba(21,35,22,0.3); border-top-color:#152316; display:inline-block; animation:spin 0.7s linear infinite;"></span>
-                <span>Joining…</span>
-              </sc-if>
-              <sc-if value="{{ isNotLoadingA }}" hint-placeholder-val="{{ true }}">
-                <span>Join the Waitlist</span>
-              </sc-if>
-            </button>
-          </form>
+          <button type="submit" class="btn btn--submit">
+            <span class="spinner" data-loading-indicator hidden></span>
+            <span data-submit-label>Join the Waitlist</span>
+          </button>
+        </form>
 
-          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:12px 20px; margin-top:28px; padding-top:24px; border-top:1px solid var(--sand-line);">
-            <sc-for list="{{ perks }}" as="perk" hint-placeholder-count="5">
-              <div style="display:flex; align-items:center; gap:10px; font-size:13.5px; color:var(--ink-soft);">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" style="flex:none;"><circle cx="12" cy="12" r="10" stroke="{{ accentColor }}" stroke-width="1.6"></circle><path d="M8 12.5L10.6 15L16 9" stroke="{{ accentColor }}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-                <span>{{ perk }}</span>
-              </div>
-            </sc-for>
-          </div>
+        <div class="perks">
+          <div class="perk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 12.5L10.6 15L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Early access</span></div>
+          <div class="perk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 12.5L10.6 15L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Launch-day reminder</span></div>
+          <div class="perk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 12.5L10.6 15L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Exclusive discounts</span></div>
+          <div class="perk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 12.5L10.6 15L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Limited founder offers</span></div>
+          <div class="perk"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="var(--gold)" stroke-width="1.6"/><path d="M8 12.5L10.6 15L16 9" stroke="var(--gold)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>First access to new product drops</span></div>
         </div>
-      </sc-if>
+      </div>
     </div>
   </section>
 
   <!-- FOUNDER BENEFITS -->
-  <section style="padding:clamp(20px,4vw,40px) clamp(20px,6vw,56px) clamp(90px,10vw,130px); max-width:1180px; margin:0 auto;">
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; text-align:center; max-width:620px; margin:0 auto clamp(40px,6vw,64px);">
-      <div style="font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:14px;">Founder Benefits</div>
-      <h2 style="font-size:clamp(26px,3.4vw,40px); font-weight:700; letter-spacing:-0.02em; margin:0;">Reasons to join early</h2>
+  <section class="benefits">
+    <div class="reveal section-head">
+      <div class="eyebrow">Founder Benefits</div>
+      <h2>Reasons to join early</h2>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;">
-      <sc-for list="{{ benefits }}" as="b" hint-placeholder-count="4">
-        <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease, box-shadow 0.3s ease; background:linear-gradient(160deg, rgba(255,255,255,0.75), rgba(255,255,255,0.35)); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.7); border-radius:22px; padding:clamp(28px,3.4vw,38px) clamp(24px,2.8vw,32px); display:flex; flex-direction:column; gap:18px; box-shadow:0 20px 40px -30px rgba(151,109,42,0.3);" style-hover="box-shadow:0 26px 50px -26px rgba(151,109,42,0.42); transform:translateY(-3px);">
-          <div style="width:44px; height:44px; border-radius:12px; background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 25%, white), color-mix(in oklab, var(--gold) 12%, white)); display:flex; align-items:center; justify-content:center; color:var(--ink);">
-            <sc-if value="{{ b.isCircle }}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></sc-if>
-            <sc-if value="{{ b.isDiamond }}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" stroke="currentColor" stroke-width="1.6" transform="rotate(45 12 12)"></rect></svg></sc-if>
-            <sc-if value="{{ b.isRings }}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="12" r="6" stroke="currentColor" stroke-width="1.5"></circle><circle cx="15" cy="12" r="6" stroke="currentColor" stroke-width="1.5"></circle></svg></sc-if>
-            <sc-if value="{{ b.isBolt }}" hint-placeholder-val="{{ false }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 3L6 14h5l-1 7 7-11h-5l1-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></sc-if>
-          </div>
-          <div>
-            <h3 style="font-size:17.5px; font-weight:700; margin:0 0 8px; letter-spacing:-0.01em;">{{ b.title }}</h3>
-            <p style="font-size:14px; line-height:1.6; color:var(--ink-soft); margin:0;">{{ b.desc }}</p>
-          </div>
+    <div class="benefits__grid">
+      <div class="reveal benefit-card">
+        <div class="benefit-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/></svg></div>
+        <div>
+          <h3>Early Access</h3>
+          <p>Be among the first to experience Dazzen.</p>
         </div>
-      </sc-for>
+      </div>
+      <div class="reveal benefit-card">
+        <div class="benefit-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" stroke="currentColor" stroke-width="1.6" transform="rotate(45 12 12)"/></svg></div>
+        <div>
+          <h3>Exclusive Launch Discounts</h3>
+          <p>Receive special pricing unavailable after launch.</p>
+        </div>
+      </div>
+      <div class="reveal benefit-card">
+        <div class="benefit-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="12" r="6" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <div>
+          <h3>Founder Community</h3>
+          <p>Become one of our earliest members.</p>
+        </div>
+      </div>
+      <div class="reveal benefit-card">
+        <div class="benefit-card__icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M13 3L6 14h5l-1 7 7-11h-5l1-7z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+        <div>
+          <h3>Priority Product Drops</h3>
+          <p>Get access before products sell out.</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PHILOSOPHY -->
-  <section id="philosophy" style="padding:clamp(90px,10vw,130px) clamp(20px,6vw,56px); background:linear-gradient(180deg, rgba(241,225,198,0.6), rgba(241,225,198,0.9));">
-    <div style="max-width:1180px; margin:0 auto; display:grid; grid-template-columns:minmax(260px,0.85fr) minmax(280px,1.15fr); gap:clamp(40px,6vw,80px); align-items:center;">
-      <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; position:relative;">
-        <svg viewBox="0 0 100 60" style="position:absolute; top:-34px; left:-8px; width:88px; height:auto; opacity:0.5; pointer-events:none; color:var(--gold);" fill="none">
-          <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3"></circle>
-          <circle cx="46" cy="30" r="5" fill="currentColor" opacity="0.35"></circle>
-          <circle cx="70" cy="10" r="3" fill="currentColor" opacity="0.45"></circle>
-          <line x1="14" y1="14" x2="46" y2="30" stroke="currentColor" stroke-width="1.1" opacity="0.4"></line>
-          <line x1="46" y1="30" x2="70" y2="10" stroke="currentColor" stroke-width="1.1" opacity="0.3"></line>
+  <section id="philosophy" class="philosophy">
+    <div class="philosophy__grid">
+      <div class="reveal philosophy__copy">
+        <svg class="molecule molecule--philosophy" viewBox="0 0 100 60" fill="none" aria-hidden="true">
+          <circle cx="14" cy="14" r="10" stroke="currentColor" stroke-width="1.3"/>
+          <circle cx="46" cy="30" r="5" fill="currentColor" opacity="0.35"/>
+          <circle cx="70" cy="10" r="3" fill="currentColor" opacity="0.45"/>
+          <line x1="14" y1="14" x2="46" y2="30" stroke="currentColor" stroke-width="1.1" opacity="0.4"/>
+          <line x1="46" y1="30" x2="70" y2="10" stroke="currentColor" stroke-width="1.1" opacity="0.3"/>
         </svg>
-        <div style="font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:14px;">Our Philosophy</div>
-        <h2 style="font-size:clamp(26px,3.4vw,38px); font-weight:700; letter-spacing:-0.02em; line-height:1.15; margin:0 0 20px;">Clinical science meets premium restraint.</h2>
-        <p style="font-size:15.5px; line-height:1.7; color:var(--ink-soft); margin:0 0 32px; max-width:46ch;">We formulate with active ingredients backed by research, at concentrations that work. No filler botanicals, no exaggerated claims — just transparent, effective skincare.</p>
 
-        <div style="display:flex; flex-direction:column; gap:22px;">
-          <sc-for list="{{ pillars }}" as="p" hint-placeholder-count="4">
-            <div style="display:flex; gap:16px; align-items:flex-start;">
-              <div style="width:34px; height:34px; border-radius:9px; border:1px solid rgba(255,255,255,0.7); background:rgba(255,255,255,0.6); flex:none; display:flex; align-items:center; justify-content:center; color:var(--ink);">
-                <sc-if value="{{ p.isFlask }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 3h4M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></sc-if>
-                <sc-if value="{{ p.isCircle }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"></circle></svg></sc-if>
-                <sc-if value="{{ p.isShield }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></sc-if>
-                <sc-if value="{{ p.isDiamond }}" hint-placeholder-val="{{ false }}"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" stroke="currentColor" stroke-width="1.6" transform="rotate(45 12 12)"></rect></svg></sc-if>
-              </div>
-              <div>
-                <div style="font-size:15px; font-weight:600; margin-bottom:3px;">{{ p.title }}</div>
-                <div style="font-size:13.5px; color:var(--ink-soft); line-height:1.55;">{{ p.desc }}</div>
-              </div>
+        <div class="eyebrow">Our Philosophy</div>
+        <h2 class="philosophy__heading">Clinical science meets premium restraint.</h2>
+        <p class="philosophy__body">We formulate with active ingredients backed by research, at concentrations that work. No filler botanicals, no exaggerated claims — just transparent, effective skincare.</p>
+
+        <div class="pillars">
+          <div class="pillar">
+            <div class="pillar__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M10 3h4M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+            <div>
+              <div class="pillar__title">Science-backed formulations</div>
+              <div class="pillar__desc">Every product is built around clinically studied actives.</div>
             </div>
-          </sc-for>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <div>
+              <div class="pillar__title">Effective ingredients</div>
+              <div class="pillar__desc">Meaningful concentrations — no filler, no dilution.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 5-3.2 7.8-7 9-3.8-1.2-7-4-7-9V6l7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+            <div>
+              <div class="pillar__title">Full transparency</div>
+              <div class="pillar__desc">Every formulation choice is disclosed, not hidden.</div>
+            </div>
+          </div>
+          <div class="pillar">
+            <div class="pillar__icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="6" y="6" width="12" height="12" stroke="currentColor" stroke-width="1.6" transform="rotate(45 12 12)"/></svg></div>
+            <div>
+              <div class="pillar__title">Minimal, effective routines</div>
+              <div class="pillar__desc">Fewer steps, deliberately dosed — no unnecessary layers.</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div data-reveal="" style="opacity: 0; transform: translateY(24px); transition: opacity 0.9s ease 0.1s, transform 0.9s ease 0.1s; aspect-ratio: 4/5; border-radius: 24px; position: relative; overflow: hidden; background: url(&quot;./post-01-mr6mmdfh.png&quot;) center / contain no-repeat; border: 1px solid rgba(255,255,255,0.7); box-shadow: 0 30px 70px -30px rgba(151,109,42,0.4); width: 604px; height: 605px">
+      <div class="reveal reveal--d1 philosophy__image">
+        <picture>
+          <source srcset="assets/images/philosophy.webp" type="image/webp">
+          <img src="assets/images/philosophy.jpg" alt="Dazzen formulation detail" loading="lazy" width="1000" height="1000">
+        </picture>
       </div>
     </div>
   </section>
 
-  <!-- COUNTDOWN (dark section) -->
-  <sc-if value="{{ showCountdown }}" hint-placeholder-val="{{ true }}">
-  <section style="padding:clamp(90px,10vw,130px) clamp(20px,6vw,56px); background:linear-gradient(165deg, #152316 0%, #0D160E 100%); color:var(--paper); text-align:center; position:relative; overflow:hidden;">
-    <div style="position:absolute; inset:0; background:linear-gradient(100deg, transparent 30%, rgba(255,255,255,0.06) 50%, transparent 70%); background-size:200% 100%; animation:shimmer 7s linear infinite; pointer-events:none; mix-blend-mode:overlay;"></div>
-    <div style="position:absolute; top:50%; left:50%; width:min(560px,70vw); height:min(340px,42vw); transform:translate(-50%,-56%); border-radius:50%; background:radial-gradient(circle, color-mix(in oklab, var(--gold) 26%, transparent), transparent 70%); filter:blur(20px); pointer-events:none;"></div>
-    <svg viewBox="0 0 160 100" style="position:absolute; bottom:8%; left:4%; width:clamp(100px,14vw,170px); height:auto; opacity:0.55; pointer-events:none; color:var(--gold);" fill="none">
-      <circle cx="20" cy="70" r="12" stroke="currentColor" stroke-width="1.3"></circle>
-      <circle cx="58" cy="40" r="6" fill="currentColor" opacity="0.4"></circle>
-      <circle cx="100" cy="60" r="4" fill="currentColor" opacity="0.35"></circle>
-      <line x1="20" y1="70" x2="58" y2="40" stroke="currentColor" stroke-width="1.1" opacity="0.45"></line>
-      <line x1="58" y1="40" x2="100" y2="60" stroke="currentColor" stroke-width="1.1" opacity="0.35"></line>
+  <!-- COUNTDOWN -->
+  <section class="countdown" data-countdown-section>
+    <div class="countdown__shimmer" aria-hidden="true"></div>
+    <div class="countdown__glow" aria-hidden="true"></div>
+    <svg class="molecule molecule--countdown" viewBox="0 0 160 100" fill="none" aria-hidden="true">
+      <circle cx="20" cy="70" r="12" stroke="currentColor" stroke-width="1.3"/>
+      <circle cx="58" cy="40" r="6" fill="currentColor" opacity="0.4"/>
+      <circle cx="100" cy="60" r="4" fill="currentColor" opacity="0.35"/>
+      <line x1="20" y1="70" x2="58" y2="40" stroke="currentColor" stroke-width="1.1" opacity="0.45"/>
+      <line x1="58" y1="40" x2="100" y2="60" stroke="currentColor" stroke-width="1.1" opacity="0.35"/>
     </svg>
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; max-width:600px; margin:0 auto; position:relative;">
-      <div style="font-family:'Space Grotesk',sans-serif; font-size:11.5px; font-weight:600; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Launching Soon</div>
-      <h2 style="font-size:clamp(26px,3.4vw,38px); font-weight:700; letter-spacing:-0.02em; margin:0 0 16px;">The countdown has begun.</h2>
-      <p style="font-size:14.5px; color:rgba(251,242,228,0.6); margin:0 0 48px;">Estimated timeline — waitlist members get the exact date first.</p>
 
-      <div style="display:flex; justify-content:center; gap:clamp(14px,3vw,28px); flex-wrap:wrap;">
-        <sc-for list="{{ countdownUnits }}" as="u" hint-placeholder-count="4">
-          <div style="width:clamp(72px,16vw,96px);">
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:clamp(32px,6vw,52px); font-weight:700; font-variant-numeric:tabular-nums; letter-spacing:-0.02em; background:linear-gradient(180deg,#FFFFFF,var(--gold) 130%); -webkit-background-clip:text; background-clip:text; color:transparent;">{{ u.value }}</div>
-            <div style="font-family:'Space Grotesk',sans-serif; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:rgba(251,242,228,0.5); margin-top:6px;">{{ u.label }}</div>
-          </div>
-        </sc-for>
+    <div class="reveal countdown__content">
+      <div class="eyebrow">Launching Soon</div>
+      <h2>The countdown has begun.</h2>
+      <p class="countdown__sub">Estimated timeline — waitlist members get the exact date first.</p>
+
+      <div class="countdown__units">
+        <div class="countdown__unit">
+          <div class="countdown__value" data-countdown="days">00</div>
+          <div class="countdown__label">Days</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__value" data-countdown="hours">00</div>
+          <div class="countdown__label">Hours</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__value" data-countdown="minutes">00</div>
+          <div class="countdown__label">Minutes</div>
+        </div>
+        <div class="countdown__unit">
+          <div class="countdown__value" data-countdown="seconds">00</div>
+          <div class="countdown__label">Seconds</div>
+        </div>
       </div>
     </div>
   </section>
-  </sc-if>
 
   <!-- SECOND CTA -->
-  <section style="padding:clamp(90px,10vw,130px) clamp(20px,6vw,56px); display:flex; justify-content:center; position:relative; overflow:hidden;">
-    <div style="position:absolute; top:-10%; right:8%; width:clamp(220px,30vw,380px); height:clamp(180px,24vw,300px); border-radius:52% 48% 46% 54% / 48% 52% 48% 52%; background:radial-gradient(110% 120% at 60% 40%, rgba(255,255,255,0.8), color-mix(in oklab, var(--gold) 24%, transparent) 46%, transparent 74%); filter:blur(4px); pointer-events:none;"></div>
-    <div data-reveal="" style="opacity:0; transform:translateY(24px); transition:opacity 0.9s ease, transform 0.9s ease; width:100%; max-width:640px; text-align:center; position:relative;">
-      <h2 style="font-size:clamp(26px,3.6vw,42px); font-weight:700; letter-spacing:-0.02em; margin:0 0 14px;">Don't miss the launch.</h2>
-      <p style="font-size:15px; color:var(--ink-soft); line-height:1.6; margin:0 0 32px; max-width:44ch; margin-left:auto; margin-right:auto;">Join the waitlist for early access, founder pricing, and a reminder the moment Dazzen goes live.</p>
+  <section class="cta2">
+    <div class="blob blob--c" aria-hidden="true"></div>
+    <div class="reveal cta2__content">
+      <h2>Don't miss the launch.</h2>
+      <p>Join the waitlist for early access, founder pricing, and a reminder the moment Dazzen goes live.</p>
 
-      <sc-if value="{{ isSuccessB }}" hint-placeholder-val="{{ false }}">
-        <div style="display:flex; align-items:center; justify-content:center; gap:10px; font-size:15px; font-weight:600; padding:18px; background:rgba(255,255,255,0.6); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.8); border-radius:14px;">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L10 17.5L19 7" stroke="{{ accentColor }}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          <span>You're on the list — we'll be in touch.</span>
-        </div>
-      </sc-if>
-      <sc-if value="{{ isNotSuccessB }}" hint-placeholder-val="{{ true }}">
-        <form onSubmit="{{ handleSubmitB }}" style="display:flex; gap:10px; flex-wrap:wrap;">
-          <input ref="{{ setNameRefB }}" type="text" autocomplete="given-name" name="firstName" placeholder="Name" value="{{ firstNameB }}" onChange="{{ setFirstNameB }}" style="flex:1 1 140px; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:100px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
-          <input ref="{{ setEmailRefB }}" type="email" autocomplete="email" name="email" placeholder="Email address" value="{{ emailB }}" onChange="{{ setEmailB }}" style="flex:2 1 200px; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:100px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
-          <input ref="{{ setPhoneRefB }}" type="tel" autocomplete="tel" name="phone" placeholder="Contact number" value="{{ phoneB }}" onChange="{{ setPhoneB }}" style="flex:1 1 140px; font-family:'Manrope',sans-serif; font-size:15px; padding:15px 18px; border-radius:100px; border:1px solid var(--sand-line); background:rgba(255,255,255,0.7); color:var(--ink); outline:none; transition:border-color 0.25s ease, box-shadow 0.25s ease;" style-focus="border-color:var(--gold); box-shadow:0 0 0 3px var(--gold-soft);">
-          <button type="submit" onClick="{{ ripple }}" disabled="{{ isLoadingB }}" style="position:relative; overflow:hidden; flex:1 1 140px; font-family:'Space Grotesk',sans-serif; font-size:14.5px; font-weight:600; color:var(--ink); background:linear-gradient(135deg, color-mix(in oklab, var(--gold) 40%, white), var(--gold)); padding:15px 22px; border:none; border-radius:100px; cursor:pointer; transition:transform 0.25s ease;" style-hover="transform:translateY(-2px);">
-            <sc-if value="{{ isLoadingB }}" hint-placeholder-val="{{ false }}">Joining…</sc-if>
-            <sc-if value="{{ isNotLoadingB }}" hint-placeholder-val="{{ true }}">Join Waitlist</sc-if>
+      <div class="cta2__success" data-form-success="b" hidden>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M5 12.5L10 17.5L19 7" stroke="var(--gold)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>You're on the list — we'll be in touch.</span>
+      </div>
+
+      <div data-form-idle="b">
+        <form data-waitlist-form="b" class="cta2__form" novalidate>
+          <input type="text" autocomplete="given-name" name="firstName" placeholder="Name" class="field field--pill field--grow1" data-field="name" aria-label="First name" required>
+          <input type="email" autocomplete="email" name="email" placeholder="Email address" class="field field--pill field--grow2" data-field="email" aria-label="Email address" required>
+          <input type="tel" autocomplete="tel" name="phone" placeholder="Contact number" class="field field--pill field--grow1" data-field="phone" aria-label="Contact number" required>
+          <button type="submit" class="btn btn--submit-pill">
+            <span class="spinner" data-loading-indicator hidden></span>
+            <span data-submit-label>Join Waitlist</span>
           </button>
         </form>
-        <sc-if value="{{ errorB }}" hint-placeholder-val="{{ false }}">
-          <div style="font-size:13px; color:#A23B2E; margin-top:10px;">{{ errorB }}</div>
-        </sc-if>
-      </sc-if>
+        <div class="form-error" data-form-error="b" hidden></div>
+      </div>
     </div>
   </section>
+</main>
 
-  <!-- FOOTER -->
-  <footer style="border-top:1px solid var(--sand-line); padding:clamp(40px,5vw,56px) clamp(20px,6vw,56px); display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
-    <img src="assets/dazen-logo.png" alt="Dazzen" style="height:18px; width:auto; opacity:0.85;">
-    <div style="display:flex; gap:22px; flex-wrap:wrap; font-size:13px; color:var(--ink-soft);">
-      <a href="https://instagram.com/dazzen.in" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" style="color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;" style-hover="color:var(--ink);">Instagram</a>
-      <a href="https://facebook.com/dazzen.in" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer" style="color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;" style-hover="color:var(--ink);">Facebook</a>
-      <a href="#" style="color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;" style-hover="color:var(--ink);">Privacy Policy</a>
-      <a href="#" style="color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;" style-hover="color:var(--ink);">Terms</a>
-      <a href="mailto:support@dazzen.in" style="color:var(--ink-soft); text-decoration:none; transition:color 0.2s ease;" style-hover="color:var(--ink);">Contact</a>
-    </div>
-    <div style="font-size:12.5px; color:var(--ink-faint); width:100%; text-align:center; margin-top:8px;">© 2026 Dazzen. All rights reserved.</div>
-  </footer>
+<!-- FOOTER -->
+<footer class="footer">
+  <img src="assets/images/dazzen-logo.png" alt="Dazzen" class="footer__logo" width="90" height="18">
+  <nav class="footer__links">
+    <a href="https://instagram.com/dazzen.in" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Instagram</a>
+    <a href="https://facebook.com/dazzen.in" target="_blank" rel="noopener noreferrer" referrerpolicy="no-referrer">Facebook</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms</a>
+    <a href="mailto:support@dazzen.in">Contact</a>
+  </nav>
+  <div class="footer__copy">© 2026 Dazzen. All rights reserved.</div>
+</footer>
 
-</div>
-
-</x-dc>
-<script type="text/x-dc" data-dc-script data-props="{
-  &quot;$preview&quot;: {},
-  &quot;launchDate&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;2026-10-15T00:00:00+05:30&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Launch&quot; },
-  &quot;showCountdown&quot;: { &quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;tsType&quot;: &quot;boolean&quot;, &quot;section&quot;: &quot;Launch&quot; },
-  &quot;waitlistEndpoint&quot;: { &quot;editor&quot;: &quot;text&quot;, &quot;default&quot;: &quot;&quot;, &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Backend&quot; },
-  &quot;accentColor&quot;: { &quot;editor&quot;: &quot;color&quot;, &quot;default&quot;: &quot;#C9A24B&quot;, &quot;options&quot;: [&quot;#C9A24B&quot;, &quot;#BF8F3F&quot;, &quot;#D4AF6A&quot;, &quot;#A8823C&quot;], &quot;tsType&quot;: &quot;string&quot;, &quot;section&quot;: &quot;Style&quot; }
-}">
-const DEFAULT_LAUNCH_DATE = '2026-10-15T00:00:00+05:30';
-
-// ---------------------------------------------------------------------------
-// BACKEND WIRING NOTES
-// This form works out of the box: with no endpoint configured it stores
-// signups in the browser's localStorage (key "dazzen_waitlist") so you can
-// demo the full flow. To connect a real backend, set the `waitlistEndpoint`
-// prop (Tweaks panel) to a POST endpoint and this component will send
-// { firstName, email, phone, timestamp, source } as JSON instead.
-//
-// Supabase option:
-//   1. Create a table `waitlist` (id uuid default gen_random_uuid(), first_name
-//      text, email text unique, phone text, source text, created_at timestamptz default now()).
-//   2. Create a Supabase Edge Function (or a serverless function on Vercel/
-//      Netlify) that receives this JSON body and calls:
-//        supabase.from('waitlist').insert({ first_name, email, source })
-//   3. Keep the SUPABASE_URL / SUPABASE_ANON_KEY as environment variables on
-//      the server side — never embed real keys in this client file.
-//   4. Point `waitlistEndpoint` at that function's URL.
-//
-// Google Sheets option: an Apps Script Web App (doPost) tied to a Sheet also
-// works well — see project notes for the exact script.
-//
-// Formspree/Basin option: create a form endpoint at formspree.io or usebasin.com
-// and paste its URL straight into `waitlistEndpoint` — no server code needed.
-// ---------------------------------------------------------------------------
-
-class Component extends DCLogic {
-  state = {
-    firstName_a: '', email_a: '', phone_a: '', status_a: 'idle', error_a: '',
-    firstName_b: '', email_b: '', phone_b: '', status_b: 'idle', error_b: '',
-    now: Date.now(),
-  };
-
-  componentDidMount() {
-    this._timer = setInterval(() => this.setState({ now: Date.now() }), 1000);
-    this._observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.style.opacity = '1';
-          entry.target.style.transform = 'translateY(0)';
-          this._observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-    if (this.rootEl) {
-      this.rootEl.querySelectorAll('[data-reveal]').forEach((el) => this._observer.observe(el));
-    }
-    this._onScroll = () => {
-      const y = window.scrollY;
-      if (this.orbA) this.orbA.style.transform = `translateY(${y * 0.08}px)`;
-      if (this.orbB) this.orbB.style.transform = `translateY(${y * -0.06}px)`;
-    };
-    window.addEventListener('scroll', this._onScroll, { passive: true });
-  }
-
-  componentWillUnmount() {
-    clearInterval(this._timer);
-    if (this._observer) this._observer.disconnect();
-    window.removeEventListener('scroll', this._onScroll);
-  }
-
-  isValidEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-
-  isValidPhone(phone) {
-    const digits = phone.replace(/[\s\-()]/g, '');
-    return /^\+?\d{7,15}$/.test(digits);
-  }
-
-  ripple(e) {
-    const btn = e.currentTarget;
-    const rect = btn.getBoundingClientRect();
-    const span = document.createElement('span');
-    const size = Math.max(rect.width, rect.height) * 1.4;
-    span.style.position = 'absolute';
-    span.style.width = span.style.height = size + 'px';
-    span.style.left = (e.clientX - rect.left - size / 2) + 'px';
-    span.style.top = (e.clientY - rect.top - size / 2) + 'px';
-    span.style.borderRadius = '50%';
-    span.style.background = 'rgba(21,35,22,0.25)';
-    span.style.pointerEvents = 'none';
-    span.style.transform = 'scale(0)';
-    span.style.animation = 'rippleAnim 0.6s ease-out';
-    btn.appendChild(span);
-    span.addEventListener('animationend', () => span.remove());
-  }
-
-  async submit(key, e) {
-    e.preventDefault();
-    // Read straight from the DOM as the source of truth, not just React state:
-    // browser autofill (and some password managers) can visually fill an input
-    // without firing the events React listens to, leaving state stale even
-    // though the field looks filled. Falls back to state if refs aren't set.
-    const nameEl = key === 'a' ? this.nameRefA : this.nameRefB;
-    const emailEl = key === 'a' ? this.emailRefA : this.emailRefB;
-    const phoneEl = key === 'a' ? this.phoneRefA : this.phoneRefB;
-
-    const firstName = ((nameEl && nameEl.value) || this.state[`firstName_${key}`] || '').trim();
-    const email = ((emailEl && emailEl.value) || this.state[`email_${key}`] || '').trim().toLowerCase();
-    const phone = ((phoneEl && phoneEl.value) || this.state[`phone_${key}`] || '').trim();
-
-    if (!firstName) {
-      this.setState({ [`error_${key}`]: 'Please enter your first name.' });
-      return;
-    }
-    if (!this.isValidEmail(email)) {
-      this.setState({ [`error_${key}`]: 'Please enter a valid email address.' });
-      return;
-    }
-    if (!this.isValidPhone(phone)) {
-      this.setState({ [`error_${key}`]: 'Please enter a valid contact number.' });
-      return;
-    }
-
-    let stored = [];
-    try { stored = JSON.parse(localStorage.getItem('dazzen_waitlist') || '[]'); } catch (err) { stored = []; }
-    if (stored.some((row) => row.email === email)) {
-      this.setState({ [`error_${key}`]: "You're already on the waitlist." });
-      return;
-    }
-
-    this.setState({ [`error_${key}`]: '', [`status_${key}`]: 'loading' });
-
-    const entry = { firstName, email, phone, timestamp: new Date().toISOString(), source: 'dazzen-launch-page' };
-    const endpoint = this.props.waitlistEndpoint;
-
-    try {
-      if (endpoint) {
-        // Content-Type left as text/plain on purpose: Google Apps Script web
-        // apps don't handle CORS preflight (OPTIONS) requests, and a
-        // "simple request" (text/plain) skips the preflight entirely.
-        // The Apps Script side still reads it fine via JSON.parse(e.postData.contents).
-        await fetch(endpoint, {
-          method: 'POST',
-          headers: { 'Content-Type': 'text/plain' },
-          body: JSON.stringify(entry),
-        });
-      } else {
-        await new Promise((resolve) => setTimeout(resolve, 900));
-      }
-      stored.push(entry);
-      localStorage.setItem('dazzen_waitlist', JSON.stringify(stored));
-      this.setState({ [`status_${key}`]: 'success' });
-    } catch (err) {
-      this.setState({ [`status_${key}`]: 'idle', [`error_${key}`]: 'Something went wrong. Please try again.' });
-    }
-  }
-
-  iconFlags(name) {
-    return {
-      isCircle: name === 'circle',
-      isDiamond: name === 'diamond',
-      isRings: name === 'rings',
-      isBolt: name === 'bolt',
-      isFlask: name === 'flask',
-      isShield: name === 'shield',
-    };
-  }
-
-  renderVals() {
-    const accentColor = this.props.accentColor ?? '#C9A24B';
-    const showCountdown = this.props.showCountdown ?? true;
-    const target = new Date(this.props.launchDate || DEFAULT_LAUNCH_DATE).getTime();
-    const diff = Math.max(0, target - this.state.now);
-    const d = Math.floor(diff / 86400000);
-    const h = Math.floor(diff / 3600000) % 24;
-    const m = Math.floor(diff / 60000) % 60;
-    const s = Math.floor(diff / 1000) % 60;
-    const pad = (n) => String(n).padStart(2, '0');
-
-    const benefits = [
-      { title: 'Early Access', desc: 'Be among the first to experience Dazzen.', ...this.iconFlags('circle') },
-      { title: 'Exclusive Launch Discounts', desc: 'Receive special pricing unavailable after launch.', ...this.iconFlags('diamond') },
-      { title: 'Founder Community', desc: 'Become one of our earliest members.', ...this.iconFlags('rings') },
-      { title: 'Priority Product Drops', desc: 'Get access before products sell out.', ...this.iconFlags('bolt') },
-    ];
-
-    const pillars = [
-      { title: 'Science-backed formulations', desc: 'Every product is built around clinically studied actives.', ...this.iconFlags('flask') },
-      { title: 'Effective ingredients', desc: 'Meaningful concentrations — no filler, no dilution.', ...this.iconFlags('circle') },
-      { title: 'Full transparency', desc: 'Every formulation choice is disclosed, not hidden.', ...this.iconFlags('shield') },
-      { title: 'Minimal, effective routines', desc: 'Fewer steps, deliberately dosed — no unnecessary layers.', ...this.iconFlags('diamond') },
-    ];
-
-    return {
-      accentColor,
-      showCountdown,
-      setRootRef: (el) => { this.rootEl = el; },
-      setOrbA: (el) => { this.orbA = el; },
-      setOrbB: (el) => { this.orbB = el; },
-      setNameRefA: (el) => { this.nameRefA = el; },
-      setEmailRefA: (el) => { this.emailRefA = el; },
-      setPhoneRefA: (el) => { this.phoneRefA = el; },
-      setNameRefB: (el) => { this.nameRefB = el; },
-      setEmailRefB: (el) => { this.emailRefB = el; },
-      setPhoneRefB: (el) => { this.phoneRefB = el; },
-      ripple: (e) => this.ripple(e),
-
-      firstNameA: this.state.firstName_a,
-      emailA: this.state.email_a,
-      phoneA: this.state.phone_a,
-      setFirstNameA: (e) => this.setState({ firstName_a: e.target.value }),
-      setEmailA: (e) => this.setState({ email_a: e.target.value }),
-      setPhoneA: (e) => this.setState({ phone_a: e.target.value }),
-      handleSubmitA: (e) => this.submit('a', e),
-      isLoadingA: this.state.status_a === 'loading',
-      isNotLoadingA: this.state.status_a !== 'loading',
-      isSuccessA: this.state.status_a === 'success',
-      isNotSuccessA: this.state.status_a !== 'success',
-      errorA: this.state.error_a,
-
-      firstNameB: this.state.firstName_b,
-      emailB: this.state.email_b,
-      phoneB: this.state.phone_b,
-      setFirstNameB: (e) => this.setState({ firstName_b: e.target.value }),
-      setEmailB: (e) => this.setState({ email_b: e.target.value }),
-      setPhoneB: (e) => this.setState({ phone_b: e.target.value }),
-      handleSubmitB: (e) => this.submit('b', e),
-      isLoadingB: this.state.status_b === 'loading',
-      isNotLoadingB: this.state.status_b !== 'loading',
-      isSuccessB: this.state.status_b === 'success',
-      isNotSuccessB: this.state.status_b !== 'success',
-      errorB: this.state.error_b,
-
-      perks: ['Early access', 'Launch-day reminder', 'Exclusive discounts', 'Limited founder offers', 'First access to new product drops'],
-      benefits,
-      pillars,
-      countdownUnits: [
-        { label: 'Days', value: pad(d) },
-        { label: 'Hours', value: pad(h) },
-        { label: 'Minutes', value: pad(m) },
-        { label: 'Seconds', value: pad(s) },
-      ],
-    };
-  }
-}
-
-</script>
+<script src="script.js"></script>
 </body>
 </html>
